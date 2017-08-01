@@ -9,6 +9,7 @@
   String name=request.getParameter("ln");
   String password=request.getParameter("ps");
   String content=request.getParameter("co");
+  content=content.replace("\r\n", "<br>");
 
   
   GuestbooksVo vo=new GuestbooksVo(name,password,content);
